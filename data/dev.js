@@ -1,0 +1,7 @@
+module.exports = {
+  "search": "nightwatch",
+  "search_result": "Night Watch",
+  "urls": {
+    "search": "http://www.google.com"
+  }
+}

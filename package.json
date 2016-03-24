@@ -1,0 +1,37 @@
+{
+  "name": "nightwatch-test",
+  "version": "0.0.1",
+  "description": "nightwatch Js Test",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "ohdoking",
+  "license": "MIT",
+  "directories": {
+    "tests": "./tests"
+  },
+  "dependencies": {
+    "mocha": "^2.4.5",
+    "grunt-simple-mocha": "^0.4.0",
+    "nightwatch": "^0.8.18",
+    "selenium-server": "^2.53.0",
+    "chromedriver": "^2.21.2",
+    "dalek-browser-ie": "0.0.4",
+    "nightwatch-pages": "*",
+    "phantomjs": "~1.9.7-10",
+    "grunt": "^0.4.5",
+    "grunt-contrib-uglify": "^1.0.1",
+    "grunt-contrib-concat": "1.0.0",
+    "grunt-nightwatch": "^0.5.2",
+    "grunt-cli": "^0.1.13",
+    "grunt-concurrent": "^1.0.0",
+    "grunt-env": "^0.4.2",
+    "appium": "^1.5.0",
+    "wd": "^0.3.11",
+    "lodash": "^2.4.1",
+    "chai": "^1.10.0",
+    "chai-as-promised": "^4.1.1",
+    "colors": "^1.0.3"
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "src_folders" : ["tests"],
+  "output_folder" : "reports",
+  "custom_commands_path" : "",
+  "custom_assertions_path" : "",
+  "page_objects_path" : "",
+  "globals_path" : "",
+
+  "selenium" : {
+    "start_process" : true,
+    "server_path" : "./node_modules/selenium-server/lib/runner/selenium-server-standalone-2.53.0.jar",
+    "log_path" : "reports",
+    "host" : "127.0.0.1",
+    "port" : 4444,
+    "cli_args" : {
+      "webdriver.chrome.driver" : "./node_modules/chromedriver/lib/chromedriver/chromedriver.exe",
+      "webdriver.ie.driver" : "./node_modules/dalek-browser-ie/lib/bin/IEDriverServer.exe"
+    }
+  },
+
+  "test_settings" : {
+    "default" : {
+      "launch_url" : "http://localhost",
+      "selenium_port"  : 4444,
+      "selenium_host"  : "localhost",
+      "silent": true,
+      "screenshots" : {
+        "enabled" : true,
+        "path" : "reports/screenshots"
+      },
+      "desiredCapabilities": {
+        "browserName": "firefox",
+        "javascriptEnabled": true,
+        "acceptSslCerts": true
+      },
+      "globals" : {
+        "search": "nightwatch",
+        "search_result": "Night Watch",
+        "urls": {
+          "search": "http://www.google.com"
+        }
+      }
+    },
+
+    "chrome" : {
+      "desiredCapabilities": {
+        "browserName": "chrome",
+        "javascriptEnabled": true,
+        "acceptSslCerts": true
+      }
+    },
+
+    "ie": {
+      "desiredCapabilities": {
+        "browserName": "internet explorer",
+        "javascriptEnabled": true
+      }
+    },
+
+    "phantom": {
+      "desiredCapabilities": {
+        "browserName": "phantomjs",
+        "phantomjs.binary.path": "",
+        "javascriptEnabled": true
+      }
+    },
+    "android" : {
+      "launch_url" : "http://localhost:4723/wd/hub",
+      "selenium_port"  : 4723,
+      "selenium_host"  : "localhost",
+      "silent": true,
+      "screenshots" : {
+        "enabled" : false,
+        "path" : ""
+      },
+      "desiredCapabilities": {
+        "browserName": "android",
+        "platformName": "ANDROID",
+        "deviceName": "",
+        "version": "",
+        "javascriptEnabled": true,
+        "acceptSslCerts": true
+      }
+    }
+  }
+}
